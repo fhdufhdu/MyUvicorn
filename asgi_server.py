@@ -79,7 +79,7 @@ class MyUvicorn:
             'query_string': query_string,
             'headers': headers,
             'client': writer.get_extra_info('peername'),
-            'server':('127.0.0.1', 9000),
+            'server':(self.host, self.port),
         }
         
         # receive 함수 제작
